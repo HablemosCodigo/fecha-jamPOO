@@ -21,6 +21,16 @@ public class Fecha {
     
     }
     
+    public Fecha(String cadena){
+    int posicion1=cadena.indexOf('/'); //indexOf retrona la primera posicion cuando encuentra el argumento 
+    int posicion2=cadena.lastIndexOf('/');
+    
+    dia= Integer.parseInt(cadena.substring(0,posicion1));
+    mes=Integer.parseInt(cadena.substring(posicion1 +1,posicion2));
+    anio= Integer.parseInt(cadena.substring (posicion2+1));
+    
+    }
+    
  public void setDia(int dia){
  this.dia=dia;
  }   
