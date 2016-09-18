@@ -31,4 +31,8 @@ public class Fecha {
  public int getAnio(){
  return anio;
  }
+ 
+ public String toString(){
+ return dia + "/" +mes +"/"+ anio;
+ }
 }
