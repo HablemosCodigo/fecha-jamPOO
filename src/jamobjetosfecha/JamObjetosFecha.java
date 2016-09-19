@@ -18,6 +18,12 @@ public class JamObjetosFecha {
      Fecha segundaF= new Fecha(20,9,2016);
      
      System.out.println(f + "\n" + segundaF);
+     FechaDetallada q=new FechaDetallada();
+      q.setAnio(2016);
+     q.setDia(19);
+     q.setMes(9);
+     
+     System.out.println(q);
       
     }
    
